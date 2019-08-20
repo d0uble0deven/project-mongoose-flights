@@ -1,0 +1,10 @@
+<form action="/tickets" method="POST">
+    <label>Seat Number: <br>Capital Letter:1-9:0-9 <br>exspamle: F26</label>
+    <input name="seat" required pattern="[A-F][1-9]\d?">
+    <label>Price</label>
+    <input name="price">
+    <select name="flight">
+        <option value="<%=fID%>">Flight ID: <%=fID%></option>
+    </select>
+    <button>submit</button>
+</form>
